@@ -21,14 +21,16 @@
 
     var frame = document.getElementById("video");
 
-    frame.innerHTML = videos[number1].video;
-    
-    videos.splice(number1, 1);
+    frame.innerHTML = videos[number1].video;    
 
     function share(url){
         document.getElementById("cat").href= url;
         
     }
+
+    share(videos[number1].url);
+
+    videos.splice(number1, 1);
 
     function obtenerVideo(){
 
@@ -45,6 +47,6 @@
     document.getElementById("mor").addEventListener("click", obtenerVideo);
 
     
-    share(videos[number1].url)
+    
  
 })()
