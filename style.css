@@ -1,0 +1,28 @@
+.navbar{
+    background-color: rgb(226, 6, 6)!important;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-size: 50px !important;
+}
+
+.btn-primary{
+    margin: 100px 30px 100px !important;
+    background-color: rgb(226, 6, 6);
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    border: 50px;
+}
+body{
+    background-image: url(bg.png);
+
+}
+
+.container{
+    padding: 50px 0 0 0;
+}
+
