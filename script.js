@@ -17,11 +17,13 @@
 
     ]
 
-    var number1 = Math.floor(Math.random() * 10);
+    var number1 = Math.floor(Math.random() * videos.length);
 
     var frame = document.getElementById("video");
 
     frame.innerHTML = videos[number1].video;
+    
+    videos.splice(number1, 1);
 
     function share(url){
         document.getElementById("cat").href= url;
@@ -30,11 +32,13 @@
 
     function obtenerVideo(){
 
-        var number2 = Math.floor(Math.random() * 10);
+        var number2 = Math.floor(Math.random() * videos.length);
 
         frame.innerHTML = videos[number2].video;
 
         share(videos[number2].url);
+
+        videos.splice(number2, 1);
 
     }
 
